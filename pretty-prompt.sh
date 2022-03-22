@@ -32,12 +32,14 @@ export geom_lgsqr="$geom_lgrec$geom_lgrec"
 #####################################
 # Evaluating ancestry #
 #####################################
+SRCDIR=$(dirname $0)
+
 if [ -a currdir.txt ]
 then
-	cdir=$(cat currdir.txt)
+	cdir=$(cat $SRCDIR/currdir.txt)
 else
-	echo $(dirname $0) > currdir.txt
-	cdir=$(dirname $0)
+	echo $SRCDIR > $SRCDIR/currdir.txt
+	cdir=$SRCDIR
 fi
 
 alias ancestors="source $cdir/ancestors.sh"
