@@ -34,7 +34,7 @@ export geom_lgsqr="$geom_lgrec$geom_lgrec"
 #####################################
 SRCDIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
 
-if [ -a currdir.txt ]
+if [ -a $SRCDIR/currdir.txt ]
 then
 	cdir=$(cat $SRCDIR/currdir.txt)
 else
