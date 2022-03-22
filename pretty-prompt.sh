@@ -32,7 +32,7 @@ export geom_lgsqr="$geom_lgrec$geom_lgrec"
 #####################################
 # Evaluating ancestry #
 #####################################
-SRCDIR=$(dirname $0)
+SRCDIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
 if [ -a currdir.txt ]
 then
