@@ -1,5 +1,5 @@
 # Demo
-![ss](https://raw.githubusercontent.com/susmit31/Pretty-Prompt/master/ss.png)
+![ss](https://raw.githubusercontent.com/susmit31/susmit31.github.io/master/assets/ss.png)
 
 # Usage
 Just clone the repo and add the following to the end of your .bashrc:
