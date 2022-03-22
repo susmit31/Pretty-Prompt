@@ -41,9 +41,15 @@ PS1="[$f_cyan\$(ancestors)$f_lblue/\W]$f_yellow$geom_smsqr$geom_tri $f_cyan"
 # On my system I have compiled a Go code for evaluating the 
 # ancestry. I don't find the Bash and Python versions very
 # elegant so this is the version I run.
+# alias ancestors="~/ancestors"
+# PS1="[$f_lblue\$(ancestors)$f_orange/\W$f_none]$f_yellow$geom_smsqr$geom_tri $f_cyan"
 
-# PS1="[$f_lblue\$(~/ancestors)$f_orange/\W$f_none]$f_yellow$geom_smsqr$geom_tri $f_cyan"
-
+# Note that within the prompt you must prefix a chunk of code to be 
+# executed every time by "\". Otherwise Bash will just evaluate it 
+# at prompt startup and use that value on following prompts. So for
+# example, even if you move in to say /home/$USER/Downloads/dir, 
+# the prompt will tell you that you're in /home/dir, because the 
+# ancestry of the /home/$USER directory is "/home".
 
 ##########################################################
 # Resetting colour at the beginning of command output #
