@@ -32,7 +32,7 @@ export geom_lgsqr="$geom_lgrec$geom_lgrec"
 #####################################
 # Evaluating ancestry #
 #####################################
-if [-a currdir.txt]
+if [ -a currdir.txt ]
 then
 	cdir=$(cat currdir.txt)
 else
