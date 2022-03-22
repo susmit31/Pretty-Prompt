@@ -36,8 +36,8 @@ if [ -a currdir.txt ]
 then
 	cdir=$(cat currdir.txt)
 else
-	pwd > currdir.txt
-	cdir=$(pwd)
+	echo $(dirname $0) > currdir.txt
+	cdir=$(dirname $0)
 fi
 
 alias ancestors="source $cdir/ancestors.sh"
