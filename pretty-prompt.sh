@@ -43,7 +43,7 @@ else
 fi
 
 alias ancestors="source $cdir/ancestors.sh"
-PS1="[$f_cyan\$(ancestors)$f_lblue/\W]$f_yellow$geom_smsqr$geom_tri $f_cyan"
+PS1="$f_none[$f_cyan\$(ancestors)$f_lblue/\W$f_none]$f_yellow$geom_smsqr$geom_tri $f_cyan"
 
 # Same code for Python
 # ANCESTORS=$(python3 -c "dir='$(pwd)'; d=dir.split('/'); print('/'.join(d[:-1]) if dir!='/home/shanks-mint' else '')")
