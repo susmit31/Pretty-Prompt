@@ -32,7 +32,7 @@ export geom_lgsqr="$geom_lgrec$geom_lgrec"
 #####################################
 # Evaluating ancestry #
 #####################################
-alias ancestors="source ~/bashconf/ancestors.sh"
+alias ancestors="source ~/Pretty-Prompt/ancestors.sh"
 PS1="[$f_cyan\$(ancestors)$f_lblue/\W]$f_yellow$geom_smsqr$geom_tri $f_cyan"
 
 # Same code for Python

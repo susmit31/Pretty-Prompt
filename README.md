@@ -4,6 +4,6 @@
 # Usage
 Just clone the repo and add the following to the end of your .bashrc:
 
-`source $CODE_DIR/prompt-cols.sh`
+`source $CODE_DIR/pretty-prompt.sh`
 
 where `$CODE_DIR` is the full path to your cloned repo.
