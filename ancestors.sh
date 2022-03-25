@@ -1,6 +1,10 @@
-if [ "$(pwd)" == "/home/$USER" ] 
+if [ $(pwd) == $HOME ] 
 then
-	echo "";
+	echo "~"
+elif [ $(pwd) == / ]
+then
+	echo "/"
 else
-	echo $(dirname $(pwd));
+	anc=$(echo $(dirname $(pwd)) | sed "s|$HOME|~|")
+	echo $anc;
 fi
